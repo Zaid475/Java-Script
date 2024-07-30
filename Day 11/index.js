@@ -75,15 +75,15 @@ function lengthfinder(string,op){
 
 }
 
-function maxcount(op,string){
-    for(i=0;i<=string.length-1; i++){
-        console.log();
-    }
+// function maxcount(op,string){
+//     for(i=0;i<=string.length-1; i++){
+//         console.log();
+//     }
 
-}
+// }
 
 console.log(lengthfinder(string,op));
-maxcount(op,string);
+// maxcount(op,string);
 
 //  
 // console.log(array.includes(3));
