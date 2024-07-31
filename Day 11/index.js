@@ -1,51 +1,5 @@
-// Objects
 
 
-// var data={name:"zaid",id:1,age:24};
-
-// accessing the object values using keys:::
-// console.log(data.name);
-// console.log(data.id);
-// console.log(data.age);
-
-// console.log(data['name']);
-// console.log(data['id']);
-// console.log(data['age']);
-
-// // adding new key value pair into the object:::
-// data.gender="male";
-// data['location']='mira road'
-// console.log(data);
-// data.marks=[20,30,40,50,60];
-// console.log(data);
-
-// accesing the last element of the array present in object 
-// console.log(data.marks[data.marks.length-1]);
-// console.log(data.marks[data.marks.length-2]);
-
-// another way of creating object:::
-
-// var ob=new Object();
-// ob.name="zaid";
-// ob.age=24;
-// ob['gender']="male";
-// console.log(ob);
-
-// accesing object(keys and values) through loop
-// var data={name:"zaid",id:1,age:24};
-// for(let key in data){
-//     console.log(key,data[key]);
-// }
-
-
-
-
-
-
-// returning all the keys and values of an object
-// var ob={name:"zaid",age:24,gender:"male"};
-// console.log(Object.keys(ob));
-// console.log(Object.values(ob));
 
 
 // Q Given an string find out numbers of repetation for single lette.
@@ -59,7 +13,7 @@ var string = "miscellaneous";
 var op={};
 
 function lengthfinder(string,op){
-    // var maxcount=2;
+   
     for(i=0; i<=string.length-1; i++){
         if(op[string[i]]==undefined){
             op[string[i]]=1;
@@ -69,20 +23,28 @@ function lengthfinder(string,op){
         }
 
     }
-    return op;
+    
+
+    var count=0;
+    var character=" ";
+    for(let key in op){
+        if(op[key]>count){
+            character=key;
+            count=op[key];
+
+        }
+    }
+    console.log(op);
+
+  console.log(`the most repeated letter is ${character} having count of ${count}`);
 
 
 
 }
 
-// function maxcount(op,string){
-//     for(i=0;i<=string.length-1; i++){
-//         console.log();
-//     }
 
-// }
 
-console.log(lengthfinder(string,op));
+(lengthfinder(string,op));
 // maxcount(op,string);
 
 //  
@@ -113,11 +75,48 @@ console.log(lengthfinder(string,op));
 // console.log(index);
 
 
-   
+
+// var ages=[10,20,7,25,55,14,17];
+// function elgbtchecker(ages){
+//     ages.forEach(age => {
+//         if(age>=18){
+//             console.log(`${age}: is eligible`);
+//         }
+//         else{
+//             console.log(`${age}: is not eligible`);
+//         }
+        
+//     });
 
 
+// }
+
+// elgbtchecker(ages);
 
 
+// var ages=[10,20,7,25,55,14,17];
+
+// const agechecker=(ages1)=>{
+//     ages.forEach(age=>{
+//         if(age>=18){
+//                         console.log(`${age}: is eligible`);
+//                     }
+//                     else{
+//                         console.log(`${age}: is not eligible`);
+//                     }
+
+//     });
 
 
+// }
+// agechecker(ages);
 
+
+// var abc="zaid";
+
+// function nameeee(naam){
+//     console.log(`${naam} is clever`);
+
+// }
+
+// nameeee(abc);
