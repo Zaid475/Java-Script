@@ -12,18 +12,21 @@ const employees = [
     { name: "Eve", age: 28, department: "Marketing" },
 ];
 
-function sortByDepartmentAndAge(employees) {
-     employees.sort((a, b) => {
-        if (a.department < b.department) {
+function sorting(employees){
+    employees.sort((a,b)=>{
+        if(a.department<b.department){
             return -1;
-        } else if (a.department > b.department) {
-            return 1;
-        } else {
-            return a.age - b.age;
         }
-    });
-}
+        else if(a.department>b.department){
+            return 1;
+        }
+        else{
+          return  a.age-b.age;
+        }
 
-sortByDepartmentAndAge(employees);
+
+    })
+}
+sorting(employees);
 console.log(employees);
 
