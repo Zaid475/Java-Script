@@ -9,42 +9,42 @@
 // n : 1
 // a : 2
 // y : 1
-var string = "miscellaneous";
-var op={};
+// var string = "miscellaneous";
+// var op={};
 
-function lengthfinder(string,op){
+// function lengthfinder(string,op){
    
-    for(i=0; i<=string.length-1; i++){
-        if(op[string[i]]==undefined){
-            op[string[i]]=1;
-        }
-        else{
-            op[string[i]]++;
-        }
+//     for(i=0; i<=string.length-1; i++){
+//         if(op[string[i]]==undefined){
+//             op[string[i]]=1;
+//         }
+//         else{
+//             op[string[i]]++;
+//         }
 
-    }
+//     }
     
 
-    var count=0;
-    var character=" ";
-    for(let key in op){
-        if(op[key]>count){
-            character=key;
-            count=op[key];
+//     var count=0;
+//     var character=" ";
+//     for(let key in op){
+//         if(op[key]>count){
+//             character=key;
+//             count=op[key];
 
-        }
-    }
-    console.log(op);
+//         }
+//     }
+//     console.log(op);
 
-  console.log(`the most repeated letter is ${character} having count of ${count}`);
-
-
-
-}
+//   console.log(`the most repeated letter is ${character} having count of ${count}`);
 
 
 
-(lengthfinder(string,op));
+// }
+
+
+
+// (lengthfinder(string,op));
 // maxcount(op,string);
 
 //  
@@ -76,22 +76,22 @@ function lengthfinder(string,op){
 
 
 
-// var ages=[10,20,7,25,55,14,17];
-// function elgbtchecker(ages){
-//     ages.forEach(age => {
-//         if(age>=18){
-//             console.log(`${age}: is eligible`);
-//         }
-//         else{
-//             console.log(`${age}: is not eligible`);
-//         }
+var ages=[10,20,7,25,55,14,17];
+function elgbtchecker(ages){
+    ages.forEach(age => {
+        if(age>=18){
+            console.log(`${age}: is eligible`);
+        }
+        else{
+            console.log(`${age}: is not eligible`);
+        }
         
-//     });
+    });
 
 
-// }
+}
 
-// elgbtchecker(ages);
+elgbtchecker(ages);
 
 
 // var ages=[10,20,7,25,55,14,17];
