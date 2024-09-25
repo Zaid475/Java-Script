@@ -290,10 +290,8 @@
 // console.log(dayfinder(moonth));
 
 
-// 2. Write a function that takes a string as an argument and returns the number of
-// vowels in the string. Ignore case sensitivity.
-// Input: "Hello World"
-// Output: 3
+//
+//
 // 3. Write a for loop that prints the first 10 Fibonacci numbers.
 // Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 

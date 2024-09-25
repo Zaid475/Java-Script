@@ -76,22 +76,22 @@
 
 
 
-var ages=[10,20,7,25,55,14,17];
-function elgbtchecker(ages){
-    ages.forEach(age => {
-        if(age>=18){
-            console.log(`${age}: is eligible`);
-        }
-        else{
-            console.log(`${age}: is not eligible`);
-        }
+// var ages=[10,20,7,25,55,14,17];
+// function elgbtchecker(ages){
+//     ages.forEach(age => {
+//         if(age>=18){
+//             console.log(`${age}: is eligible`);
+//         }
+//         else{
+//             console.log(`${age}: is not eligible`);
+//         }
         
-    });
+//     });
 
 
-}
+// }
 
-elgbtchecker(ages);
+// elgbtchecker(ages);
 
 
 // var ages=[10,20,7,25,55,14,17];
@@ -120,3 +120,74 @@ elgbtchecker(ages);
 // }
 
 // nameeee(abc);
+
+
+// // Q Give an aray, do addition of numbers by using while loop .
+
+// var array = [2, 4, 5, 6, 7, 8, 3, 2];
+// // // ouput : 120
+
+// function addition(arr){
+// var count=0;
+// var i=0;
+// while(i<=arr.length-1){
+//     count=count +arr[i];
+//     i++;
+
+// }
+// console.log(count);
+
+
+// }
+// addition(array);
+
+
+// try catch
+
+// try{
+
+//     console.log("zaid");
+
+//     throw new Error("gaalt");
+    
+    
+ 
+    
+
+// }
+// catch(error){
+//     console.log(error)
+
+// }
+// finally{
+//     console.log("code ends here")
+// }
+
+
+// console.log("1");
+// console.log("2");
+// setTimeout(()=>{
+//     console.log("33");
+
+// },2000)
+
+// console.log("4")
+
+
+// const dhaval=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//        reject(console.log("chutiya"))
+
+//     },2000);
+
+// })
+
+// dhaval.catch((resolv)=>{
+//     console.log("reso");
+
+
+// })
+
+
+
+

@@ -33,18 +33,16 @@
 const proms=new Promise((resolve,reject)=>{
 
     setTimeout(()=>{
-        reject(console.log("zaid"));
+        resolve(console.log("zaid"));
 
     },2000)
 
 })
 
-proms
-.then(()=>{
-    console.log("resolve")
+proms.then(function() {
+    console.log("resolve");
+});
 
-
-})
 
 proms.catch(()=>{
     
